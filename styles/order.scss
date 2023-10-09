@@ -1,0 +1,105 @@
+.order {
+  padding: 24px 0 0 0;
+
+  @media (min-width: 580px) {
+    padding: 60px 0 0 0;
+  }
+
+  @media (min-width: 880px) {
+    padding: 60px 106px;
+  }
+
+  @media (min-width: 1120px) {
+    padding: 60px 212px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-areas: 
+      "title"
+      "price"
+      "num"
+      "info"
+      "button";
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-radius: 16px;
+      border: 1px solid #EEEFF2;
+
+    @media (min-width: 580px) {
+      position: relative;
+      padding:  60px 151px;
+    }
+
+    @media (min-width: 880px) {
+      margin: auto;
+      padding:  60px 159px;
+    }
+
+    @media (min-width: 880px) {
+      padding:  60px 212px;
+    }
+  }
+
+  &__title {
+    grid-area: title;
+    margin: 0 0 8px;
+    font-size: 16px;
+
+    @media (min-width: 580px) {
+      font-size: 20px;
+    }
+  }
+
+  &__price {
+    grid-area: price;
+    margin: 0 0 8px;
+    font-size: 16px;
+
+    @media (min-width: 580px) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-size: 20px;
+    }
+  }
+
+  &__num {
+    grid-area: num;
+    margin: 0 0 20px;
+    padding: 4px 8px;
+    max-width: 63px;
+    border-radius: 32px;
+    background: #EEEFF2;
+
+    @media (min-width: 580px) {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+  }
+
+  &__table {
+    margin: 0 0 24px;
+  }
+
+  &__btn {
+    grid-area: button;
+    max-width: 100%;
+    padding: 12px 24px;
+    color: #fff;
+    border-radius: 32px;
+    border: 1px solid #780096;
+    background: #780096;
+  }
+}
+
